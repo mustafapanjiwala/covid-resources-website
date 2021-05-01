@@ -18,15 +18,28 @@
 
 <body>
 
-  <nav class="navbar navbar-custom navbar-expand-lg navbar-light ">
+  <!-- <nav class="navbar navbar-custom navbar-expand-lg navbar-light ">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html">COVID ARMY UJJAIN</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav w-100">
+          <li class="nav-item ml-auto">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item ml-auto">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item ml-auto">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </nav>
+  </nav> -->
 
   <section id="menu">
     <div class="container">
@@ -34,19 +47,19 @@
         <div class="col-lg-3 col-md-4 my-3 my-lg-0">
           <a href="help.html">
             <img src="./assets/menu.svg" alt="Dashboard" class="img-fluid">
-            <h2 class="active">Dashboard</h2>
+            <h2>Dashboard</h2>
           </a>
         </div>
         <div class="col-lg-3 col-md-4 my-3 my-lg-0">
           <a href="oxygen.html">
             <img src="./assets/oxygen.svg" alt="Oxygen" class="img-fluid">
-            <h2>Oxygen</h2>
+            <h2 >Oxygen</h2>
           </a>
         </div>
         <div class="col-lg-3 col-md-4 my-3 my-lg-0">
           <a href="plasma.html">
             <img src="./assets/blood-donation.svg" alt="Plasma Donors" class="img-fluid">
-            <h2>Plasma Donors</h2>
+            <h2 class="active">Plasma Donors</h2>
           </a>
         </div>
         <div class="col-lg-3 col-md-4 my-3 my-lg-0">
@@ -59,49 +72,34 @@
     </div>
   </section>
 
-  <section id="cardmenu">
+  <section id="datatable">
     <div class="container">
-      <div class="row justify-content-center align-items-center text-center">
-        <div class="col-lg-4 my-2">
-          <div class="card py-5 shadow border-0">
-            <h2 class="card-title">Register as Volunteer</h2>
-            <div class="card-body">
-              <button type="button" class="btn btn-primary">Apply</button>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 my-2">
-          <div class="card py-5 shadow border-0">
-            <h2 class="card-title">Oxygen Supplier</h2>
-            <div class="card-body">
-              <button type="button" class="btn btn-primary">Apply</button>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 my-2">
-          <div class="card py-5 shadow border-0">
-            <h2 class="card-title">Medicine Supplier</h2>
-            <div class="card-body">
-              <button type="button" class="btn btn-primary">Apply</button>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 my-2">
-          <div class="card py-5 shadow border-0">
-            <h2 class="card-title">Oxygen Concentrator</h2>
-            <div class="card-body">
-              <button type="button" class="btn btn-primary">Apply</button>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 my-2">
-          <div class="card py-5 shadow border-0">
-            <h2 class="card-title">Register as Plasma Donor</h2>
-            <div class="card-body">
-              <button type="button" class="btn btn-primary">Apply</button>
-            </div>
-          </div>
-        </div>
+      <div class="text-center mb-5">
+        <h1>Oxygen Supply In Ujjain</h1>
+      </div>
+      <div class="table-responsive">
+        <table class=" table">
+          <thead>
+            <tr>
+              <th scope="col">Plasma ID</th>
+              <th scope="col">Donor name</th>
+              <th scope="col">recover date</th>
+              <th scope="col">blood group</th>
+              <th scope="col">request</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <th scope="row">1</th>
+              <td>1</td>
+              <td>Ajay meghwani</td>
+              <td>20-5-2021</td>
+              <td>b+</td>
+              <td>20</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </section>
