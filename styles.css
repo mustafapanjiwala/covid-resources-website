@@ -113,10 +113,10 @@ p {
 
 #cardmenu {
   padding: 100px 0;
-  background: rgba(177, 130, 255, 1);
+  background: rgba(177, 130, 255, 0.5);
 }
 
 #datatable {
   padding: 100px 0;
-  background: rgba(177, 130, 255, 1);
+  background: rgba(177, 130, 255, 0.5);
 }
