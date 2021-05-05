@@ -17,7 +17,8 @@
 <body>
     <nav class="navbar navbar-custom navbar-expand-lg navbar-light">
         <div class="container-fluid">
-            <a class="navbar-brand " href="./index.html" style="margin-left: 10px;" ><img class="image-fluid" src="./assets/logo inlined 2.png" alt="logo" style="max-width: 200px;"></a>
+            <a class="navbar-brand " href="./index.html" style="margin-left: 10px;"><img class="image-fluid"
+                    src="./assets/logo inlined 2.png" alt="logo" style="max-width: 200px;"></a>
             <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -43,7 +44,10 @@
             <div class="row align-items-center justify-content-center full-height py-5 py-lg-0">
                 <div class="col-lg-6">
                     <h1> Let's fight with COVID-19 together.</h1>
-                    <p>We, a group of youngsters created this website to help you and keep a track of covid resources available in ujjain and nearby districts.Here is a small contribution from our side to help you meet your needs. We also expect you to do your bit by abiding to the covid protocols.Powered by DGARAGE and Medevision</p>
+                    <p>We, a group of youngsters created this website to help you and keep a track of covid resources
+                        available in ujjain and nearby districts.Here is a small contribution from our side to help you
+                        meet your needs. We also expect you to do your bit by abiding to the covid protocols.Powered by
+                        DGARAGE and Medevision</p>
                     <a href="help.html"><button class="btn btn-primary">Resources</button></a>
                 </div>
                 <div class="col-lg-6">
@@ -57,7 +61,8 @@
         <div class="container">
             <div class="text-center mb-5">
                 <h1>Coronavirus Statistics of Ujjain</h1>
-                <p>Be positive || Don't worry people are recovering.<br> We do not show death figures because they are low in numbers and increase negativity.</p>
+                <p>Be positive || Don't worry people are recovering.<br> We do not show death figures because they are
+                    low in numbers and increase negativity.</p>
             </div>
             <div class="row justify-content-center align-items-center mb-5">
                 <div class="col-lg">
@@ -235,11 +240,39 @@
     <section id="footer">
         <div class="container">
             <div class="text-center">
-                Copyright © 2021 All Rights Reserved. <br>Mobile Application of this website is developed by Aditya Asthana<span
-                    class="material-icons">favorite</span>
+                Copyright © 2021 All Rights Reserved. <br>Mobile Application of this website is developed by Aditya
+                Asthana<span class="material-icons">favorite</span>
             </div>
         </div>
     </section>
+
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-analytics.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyDKFtpDFtdYMi7YRBV8F-aJoCHVCyARnxY",
+            authDomain: "covidarmyujjain.firebaseapp.com",
+            projectId: "covidarmyujjain",
+            storageBucket: "covidarmyujjain.appspot.com",
+            messagingSenderId: "277671483273",
+            appId: "1:277671483273:web:f72d58cd1e463b77ffb358",
+            measurementId: "G-43KVGH532B"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+
+    </script>
+
 </body>
 
 </html>
