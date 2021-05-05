@@ -1,0 +1,31 @@
+.LandingContainer{
+  display: flex;
+  padding:45px 25px;
+  background: linear-gradient(180deg , #99b1f2 , white);
+}
+
+.LandingCont{
+  flex:1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  
+}
+
+.LandingCont > img{
+  width: 70%;
+}
+
+.LandingCont > p , .LandingCont > h2 {
+  width: 80%;
+  text-align: center;
+}
+
+@media(max-width : 768px){
+  .LandingContainer{
+    display: flex;
+    flex-direction: column d '';
+  }
+}

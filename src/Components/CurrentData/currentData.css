@@ -1,0 +1,28 @@
+.CurrentDataCont{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.CurrentDataHeader{
+    text-align: center;
+}
+
+.CurrentDataStat{
+    display: flex;
+    justify-content: center;
+}
+
+.CurrentDataMain{
+    margin: 0 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.CurrentDataMain > h5{
+    text-align: center;
+    font-weight: 600;
+    color:#007bff;
+}
