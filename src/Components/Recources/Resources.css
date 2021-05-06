@@ -1,0 +1,16 @@
+.ResourcesHeader{
+    margin-left: 25px;
+    margin: 15px !important;
+}
+
+.Dashboard{
+    background-color: white;
+}
+
+.dashImg{
+    width: 30px;
+}
+
+.DashHeading{
+    font-size: 1rem;
+}

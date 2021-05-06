@@ -1,6 +1,8 @@
 import { Table } from "antd";
 import { useEffect, useState } from "react";
+import { Alert } from "react-bootstrap";
 import fire from "../../scripts/fire";
+import DashMain from "../DashMain/DashMain";
 
 let oxygenSchema = [
     {
@@ -59,6 +61,40 @@ let bedSchema = [
     },
 ]
 
+
+let tiffinSchema = [
+    {
+        title: 'Name',
+        dataIndex: 'name',
+        key: 'name',
+    },
+    {
+        title: 'Price',
+        dataIndex: 'price',
+        key: 'price',
+    },
+    {
+        title: 'Home Delivery',
+        dataIndex: 'homedelivery',
+        key: 'homedelivery',
+    },
+    {
+        title: 'Contact',
+        dataIndex: 'contact',
+        key: 'contact',
+    },
+    {
+        title: 'Area',
+        dataIndex: 'area',
+        key: 'area',
+    },
+    {
+        title: 'Description',
+        dataIndex: 'description',
+        key: 'description',
+    },
+]
+
 let getData = async (id) => {
     let tableData = null;
     if (id === "oxygen") {
@@ -67,6 +103,10 @@ let getData = async (id) => {
 
     if (id === "hospitalbeds") {
         tableData = await fire.getBeds();
+    }
+
+    if (id === 'tiffinserv') {
+        tableData = await fire.getTiffin();
     }
 
     // if (id === "plasmaassiastance") {
@@ -84,16 +124,24 @@ let DataTable = (props) => {
     let [tableData, setTableData] = useState();
 
     let renderTable = (id, tableData) => {
+        if (id === "dashboard" || !id) {
+            return <DashMain></DashMain>
+        }
+
         if (tableData === null) {
-            return <div>No Table</div>
+            return <Alert variant="danger">No data avilable</Alert>
         }
 
         if (id === "oxygen") {
-            return <Table ref={props.ref} key={0} dataSource={tableData} columns={oxygenSchema}></Table>
+            return <Table key={0} dataSource={tableData} columns={oxygenSchema}></Table>
         }
 
         if (id === "hospitalbeds") {
-            return <Table ref={props.ref} key={0} dataSource={tableData} columns={bedSchema}></Table>
+            return <Table key={0} dataSource={tableData} columns={bedSchema}></Table>
+        }
+
+        if (id === "tiffinserv") {
+            return <Table key={0} dataSource={tableData} columns={tiffinSchema}></Table>
         }
 
         // if (id === "plasmaassiastance") {

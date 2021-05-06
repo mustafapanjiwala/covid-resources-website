@@ -61,6 +61,19 @@ let fire = (() => {
         return data.data();
     }
 
+    let getTiffin = async () => {
+        const tiffinRef = db.collection('tiffin');
+        const tiffin = await tiffinRef.get();
+
+        let avTiffin = [];
+        tiffin.forEach(doc => {
+            avTiffin.push(doc.data());
+        })
+
+        return avTiffin;
+
+    }
+
     // let getPlasma = async () => {
     //     const plasmaRef = db.collection('oxygen');
     //     const plasma = await plasmaRef.get();
@@ -74,6 +87,6 @@ let fire = (() => {
     // }
 
 
-    return { init, db_init, getOxygen, getBeds, getData };
+    return { init, db_init, getOxygen, getBeds, getData, getTiffin };
 })();
 export default fire;

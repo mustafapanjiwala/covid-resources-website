@@ -26,6 +26,6 @@
 @media(max-width : 768px){
   .LandingContainer{
     display: flex;
-    flex-direction: column d '';
+    flex-direction: column;
   }
 }
