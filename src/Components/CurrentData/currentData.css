@@ -26,3 +26,17 @@
     font-weight: 600;
     color:#007bff;
 }
+
+@media(max-width : 720px){
+    .CurrentDataMain > h4{
+        text-align: center;
+        font-size: 1.3rem;
+    }
+
+    .CurrentDataMain{
+        margin: 0 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}

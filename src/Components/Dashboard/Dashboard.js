@@ -13,38 +13,38 @@ let Dashboard = (props) => {
         <div className="container" onClick={props.onClick}>
             <div className="row justify-content-center align-items-center text-center">
                 <div className="col-lg-2 col-md-6 my-3 my-lg-0">
-                    <Link to="/res/dashboard"> <img src={menu} alt="Dashboard" className="img-fluid dashImg" />
+                    <Link to="/res/dashboard" onClick={() => { props.setLoading(1) }}> <img src={menu} alt="Dashboard" className="img-fluid dashImg" />
                         <h2 className="DashHeading">Dashboard</h2>
                     </Link>
                 </div>
 
                 <div className="col-lg-2 col-md-6 my-3 my-lg-0">
-                    <Link to="/res/oxygen" >
+                    <Link to="/res/oxygen" onClick={() => { props.setLoading(1) }}>
                         <img src={oxygen} alt="Dashboard" className="img-fluid dashImg" />
                         <h2 className="DashHeading">Oxygen</h2>
                     </Link>
                 </div>
 
                 <div className="col-lg-2 col-md-6 my-3 my-lg-0">
-                    <Link to="/res/plasmaassiastance"> <img src={plasma} alt="Dashboard" className="img-fluid dashImg" />
+                    <Link to="/res/plasmaassiastance" onClick={() => { props.setLoading(1) }}> <img src={plasma} alt="Dashboard" className="img-fluid dashImg" />
                         <h2 className="DashHeading">Plasma Assistance</h2>
                     </Link>
                 </div>
 
                 <div className="col-lg-2 col-md-6 my-3 my-lg-0">
-                    <Link to="/res/tiffinserv"> <img src={tiffin} alt="Dashboard" className="img-fluid dashImg" />
+                    <Link to="/res/tiffinserv" onClick={() => { props.setLoading(1) }}> <img src={tiffin} alt="Dashboard" className="img-fluid dashImg" />
                         <h2 className="DashHeading">Tiffin Service</h2>
                     </Link>
                 </div>
 
                 <div className="col-lg-2 col-md-6 my-3 my-lg-0">
-                    <Link to="/res/hospitalbeds"> <img src={beds} alt="Dashboard" className="img-fluid dashImg" />
+                    <Link to="/res/hospitalbeds" onClick={() => { props.setLoading(1) }}> <img src={beds} alt="Dashboard" className="img-fluid dashImg" />
                         <h2 className="DashHeading">Hospital Beds</h2>
                     </Link>
                 </div>
 
                 <div className="col-lg-2 col-md-6 my-3 my-lg-0">
-                    <Link to="/res/oxycon"> <img src={concentrator} alt="Dashboard" className="img-fluid dashImg" />
+                    <Link to="/res/oxycon" onClick={() => { props.setLoading(1) }}> <img src={concentrator} alt="Dashboard" className="img-fluid dashImg" />
                         <h2 className="DashHeading">Oxygen Concentrator</h2>
                     </Link>
                 </div>

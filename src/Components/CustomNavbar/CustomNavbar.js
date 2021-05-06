@@ -1,4 +1,4 @@
-import { MdSettings } from 'react-icons/md';
+// import { MdSettings } from 'react-icons/md';
 import { Link } from 'react-router-dom';
 import { Navbar, Nav } from 'react-bootstrap';
 import siteLogo from "../../img/site-logo.png";

@@ -1,6 +1,6 @@
 import { Table } from "antd";
 import { useEffect, useState } from "react";
-import { Alert } from "react-bootstrap";
+import { Alert, Spinner } from "react-bootstrap";
 import fire from "../../scripts/fire";
 import DashMain from "../DashMain/DashMain";
 
@@ -122,8 +122,17 @@ let getData = async (id) => {
 let DataTable = (props) => {
     console.log("props.id", props.id);
     let [tableData, setTableData] = useState();
+    // let [load, setLoad] = useState(1);
+    let setLoading = props.setLoading;
 
     let renderTable = (id, tableData) => {
+        if (props.loading === 1) {
+            return <div className="DataLoading">
+                <Spinner animation="border"></Spinner>
+                Loading
+                </div>
+        }
+
         if (id === "dashboard" || !id) {
             return <DashMain></DashMain>
         }
@@ -150,14 +159,16 @@ let DataTable = (props) => {
     }
 
     useEffect(() => {
+
         let fetchData = async () => {
             console.log("USe Effect ran");
             setTableData(await getData(props.id));
+            setLoading(0);
         }
         fetchData();
-    }, [props.id])
+    }, [props.id, props.loading])
 
-
+    console.log("rerender : load : ", props.loading);
     return <div className="container-flex" id="table">
         {/* <Table dataSource={dataSource} columns={columns}></Table> */}
         {renderTable(props.id, tableData)}

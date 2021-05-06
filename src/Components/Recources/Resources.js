@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { useParams } from "react-router";
 import Dashboard from "../Dashboard/Dashboard";
 import DataTable from "../DataTable/DataTable";
@@ -8,6 +8,7 @@ import "./Resources.css";
 let Resources = () => {
     // let match = useRouteMatch();
     const myRef = useRef(null);
+    let [loading, setLoading] = useState(0);
 
 
     const exScroll = () => myRef.current.scrollIntoView();
@@ -43,12 +44,12 @@ let Resources = () => {
     }
 
     let RenderData = () => {
-        return <DataTable id={id} ></DataTable>
+        return <DataTable id={id} loading={loading} setLoading={setLoading}></DataTable>
     }
 
-
+    // console.log("loading : ", loading);
     return <div>
-        <Dashboard onClick={exScroll}></Dashboard>
+        <Dashboard setLoading={setLoading} onClick={exScroll}></Dashboard>
         <h1 ref={myRef} className="ResourcesHeader">{headingCalc(id) + " : "}</h1>
         {RenderData()};
     </div>
