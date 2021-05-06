@@ -6,15 +6,19 @@ import DataTable from "../DataTable/DataTable";
 
 let Resources = () => {
     // let match = useRouteMatch();
+    // const ref = useRef(null);
+
+    // const exScroll = () => ref.current.scrollIntoView();
+
     let { id } = useParams();
 
     let RenderData = () => {
-        return <DataTable id={id}></DataTable>
+        return <DataTable id={id} ></DataTable>
     }
 
 
     return <div>
-        <Dashboard></Dashboard>
+        <Dashboard ></Dashboard>
         <h1>{id}</h1>
         {RenderData()};
     </div>

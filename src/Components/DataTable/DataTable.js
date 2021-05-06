@@ -77,27 +77,29 @@ let getData = async (id) => {
 }
 
 
-let renderTable = (id, tableData) => {
-    if (tableData === null) {
-        return <div>No Table</div>
-    }
 
-    if (id === "oxygen") {
-        return <Table key={0} dataSource={tableData} columns={oxygenSchema}></Table>
-    }
-
-    if (id === "hospitalbeds") {
-        return <Table key={0} dataSource={tableData} columns={bedSchema}></Table>
-    }
-
-    // if (id === "plasmaassiastance") {
-    //     return <Table dataSource={tableData} columns={oxygenSchema}></Table>
-    // }
-}
 
 let DataTable = (props) => {
     console.log("props.id", props.id);
     let [tableData, setTableData] = useState();
+
+    let renderTable = (id, tableData) => {
+        if (tableData === null) {
+            return <div>No Table</div>
+        }
+
+        if (id === "oxygen") {
+            return <Table ref={props.ref} key={0} dataSource={tableData} columns={oxygenSchema}></Table>
+        }
+
+        if (id === "hospitalbeds") {
+            return <Table ref={props.ref} key={0} dataSource={tableData} columns={bedSchema}></Table>
+        }
+
+        // if (id === "plasmaassiastance") {
+        //     return <Table dataSource={tableData} columns={oxygenSchema}></Table>
+        // }
+    }
 
     useEffect(() => {
         let fetchData = async () => {
@@ -108,7 +110,7 @@ let DataTable = (props) => {
     }, [props.id])
 
 
-    return <div className="container-flex">
+    return <div className="container-flex" id="table">
         {/* <Table dataSource={dataSource} columns={columns}></Table> */}
         {renderTable(props.id, tableData)}
     </div>
