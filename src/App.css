@@ -16,7 +16,7 @@
 
 .precautions{
   background-color: #b182ff;
-  padding: 100px;
+  padding: 100px 0;
 }
 
 .LandingCont > img{
@@ -29,7 +29,7 @@
 }
 
 .symptoms{
-  padding: 100px;
+  padding: 100px 0 ;
 }
 
 @media(max-width : 768px){
