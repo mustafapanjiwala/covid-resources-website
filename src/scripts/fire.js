@@ -8,7 +8,7 @@ let fire = (() => {
     // let analytics;
 
     let init = () => {
-        console.log("Firebase Initialized");
+        // console.log("Firebase Initialized");
         var firebaseConfig = {
             apiKey: "AIzaSyDKFtpDFtdYMi7YRBV8F-aJoCHVCyARnxY",
             authDomain: "covidarmyujjain.firebaseapp.com",
@@ -26,7 +26,7 @@ let fire = (() => {
 
 
     let db_init = () => {
-        console.log("Database initialized");
+        // console.log("Database initialized");
         db = firebase.firestore();
     }
 
@@ -50,7 +50,7 @@ let fire = (() => {
         bed.forEach(doc => {
             avBed.push(doc.data());
         })
-        console.log("Bed ", avBed);
+        // console.log("Bed ", avBed);
         return avBed;
     }
 

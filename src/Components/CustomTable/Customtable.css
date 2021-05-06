@@ -1,0 +1,42 @@
+.CustomTable{
+    width: 100%;
+    padding: 25px 95px;
+}
+
+.CardField{
+    display: flex;
+}
+
+.CardField > h6{
+    display: inline;
+    font-weight: 600;
+}
+
+.DataCard{
+    padding: 15px;
+    padding-top: 25px;
+    background-color: white;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width : 720px) {
+    .CustomTable{
+        width: 100%;
+        padding: 25px 0;
+    }
+
+    .CardField{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .DataCard{
+        display: grid;
+        grid-template-columns: 1fr ;
+    }
+}

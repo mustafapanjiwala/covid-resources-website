@@ -1,13 +1,16 @@
 // import { MdSettings } from 'react-icons/md';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import { Navbar, Nav } from 'react-bootstrap';
 import siteLogo from "../../img/site-logo.png";
 import "./CustomNavbar.css";
 
 
 let CustomNavbar = () => {
+    let history = useHistory();
     return <Navbar collapseOnSelect className="CustomNavbar" expand="lg">
-        <Navbar.Brand>
+        <Navbar.Brand style={{ cursor: "pointer" }} onClick={() => {
+            history.push("/");
+        }}>
             <img src={siteLogo} alt="Covid Ujjain" style={{ maxWidth: "200px" }}></img>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
