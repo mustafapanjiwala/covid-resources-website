@@ -3,17 +3,18 @@ import { useParams } from "react-router";
 import Dashboard from "../Dashboard/Dashboard";
 import DataTable from "../DataTable/DataTable";
 import "./Resources.css";
+import language from "../../assets/language"
 // import fire from "../../scripts/fire";
 
-let Resources = () => {
+let Resources = (props) => {
     // let match = useRouteMatch();
     const myRef = useRef(null);
     let [loading, setLoading] = useState(0);
-
+    let lan = props.lan;
 
     const exScroll = () => myRef.current.scrollIntoView();
 
-    let { id } = useParams();
+    let { id } = useParams(null);
 
     let headingCalc = (id) => {
         if (id === "oxygen") {
@@ -44,13 +45,13 @@ let Resources = () => {
     }
 
     let RenderData = () => {
-        return <DataTable id={id} loading={loading} setLoading={setLoading}></DataTable>
+        return <DataTable lan={lan} id={id} loading={loading} setLoading={setLoading}></DataTable>
     }
 
     // console.log("loading : ", loading);
     return <div>
-        <Dashboard setLoading={setLoading} onClick={exScroll}></Dashboard>
-        <h1 ref={myRef} className="ResourcesHeader">{headingCalc(id) + " : "}</h1>
+        <Dashboard lan={lan} setLoading={setLoading} onClick={exScroll}></Dashboard>
+        <h1 ref={myRef} className="ResourcesHeader">{language[id || "dashboard"][lan] + " : "}</h1>
         {RenderData()};
     </div>
 }

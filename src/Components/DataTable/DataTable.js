@@ -1,4 +1,4 @@
-import { Table } from "antd";
+// import { Table } from "antd";
 import { useEffect, useState } from "react";
 import { Alert, Spinner } from "react-bootstrap";
 import fire from "../../scripts/fire";
@@ -124,6 +124,7 @@ let DataTable = (props) => {
     let [tableData, setTableData] = useState();
     // let [load, setLoad] = useState(1);
     let setLoading = props.setLoading;
+    let lan = props.lan;
 
     let renderTable = (id, tableData) => {
         if (props.loading === 1) {
@@ -134,7 +135,7 @@ let DataTable = (props) => {
         }
 
         if (id === "dashboard" || !id) {
-            return <DashMain></DashMain>
+            return <DashMain lan={lan}></DashMain>
         }
 
         if (tableData === null) {
@@ -169,7 +170,7 @@ let DataTable = (props) => {
             setLoading(0);
         }
         fetchData();
-    }, [props.id, props.loading])
+    }, [props.id, props.loading, props.lan])
 
     // console.log("rerender : load : ", props.loading);
     return <div className="container-flex" id="table">

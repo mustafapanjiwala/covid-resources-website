@@ -12,35 +12,38 @@ import fever from "../../img/Fever.svg";
 import soreThroat from "../../img/sore throat.svg";
 import headache from "../../img/headache.svg";
 import cough from "../../img/Cough.svg";
+import language from "../../assets/language";
 
-let Landing = () => {
+let Landing = (props) => {
+    let lan = props.lan;
+
     return <div>
 
         <div className="LandingContainer">
             <div className="LandingCont">
-                <h2>Let's fight with COVID-19 together.</h2>
-                <p>We, a group of youngsters created this website to help you and keep a track of covid resources available in ujjain and nearby districts.Here is a small contribution from our side to help you meet your needs. We also expect you to do your bit by abiding to the covid protocols.Powered by DGARAGE and Medevision</p>
-                <Link to="/res"><Button>Resources</Button></Link>
+                <h2>{language.fightCovid[lan]}</h2>
+                <p>{language.homeDesc[lan]}</p>
+                <Link to="/res"><Button>{language.resources[lan]}</Button></Link>
             </div>
             <div className="LandingCont">
                 <img className="img-fluid" src={covidImg} alt="Covid Img"></img>
             </div>
         </div>
-        <CurrentData></CurrentData>
+        <CurrentData lan={lan}></CurrentData>
 
 
         {/* Bottom Path */}
         <section className="precautions">
             <div class="container">
                 <div class="text-center mb-5">
-                    <h1>Precautions to take</h1>
+                    <h1>{language.preCaution[lan]}</h1>
                 </div>
                 <div class="row align-items-center justify-content-center">
                     <div class="col-lg-3">
                         <div class="card shadow p-3 mb-5 bg-white border-0 rounded">
                             <img src={facemask} alt="face mask" />
                             <div class="card-body">
-                                <h2 class="card-text text-center">Wear facemask</h2>
+                                <h2 class="card-text text-center">{language.wearFacemask[lan]}</h2>
                             </div>
                         </div>
                     </div>
@@ -48,7 +51,7 @@ let Landing = () => {
                         <div class="card shadow p-3 mb-5 bg-white border-0 rounded">
                             <img src={socialDistancing} alt="social distancing" />
                             <div class="card-body">
-                                <h2 class="card-text text-center">social distancing</h2>
+                                <h2 class="card-text text-center">{language.socialDistancing[lan]}</h2>
                             </div>
                         </div>
                     </div>
@@ -56,7 +59,7 @@ let Landing = () => {
                         <div class="card shadow p-3 mb-5 bg-white border-0 rounded">
                             <img src={stayhome} alt="stay home" />
                             <div class="card-body">
-                                <h2 class="card-text text-center"> Stay at home</h2>
+                                <h2 class="card-text text-center">{language.stayAthome[lan]}</h2>
                             </div>
                         </div>
                     </div>
@@ -64,7 +67,7 @@ let Landing = () => {
                         <div class="card shadow p-3 mb-5 bg-white border-0 rounded">
                             <img src={handwash} alt="wash hands" />
                             <div class="card-body">
-                                <h2 class="card-text text-center">Wash your hands</h2>
+                                <h2 class="card-text text-center">{language.washHands[lan]}</h2>
                             </div>
                         </div>
                     </div>
@@ -76,14 +79,14 @@ let Landing = () => {
         <section className="symptoms">
             <div class="container">
                 <div class="text-center mb-5">
-                    <h1>Common Symptoms of Coronavirus</h1>
+                    <h1>{language.commonSymp[lan]}</h1>
                 </div>
                 <div class="row justify-content-center align-items-center">
                     <div class="col-lg-3">
                         <div class="card shadow p-3 mb-5 bg-white rounded text-center">
                             <div class="card-body">
                                 <img src={fever} alt="fever" class="img-fluid" />
-                                <h2>Fever</h2>
+                                <h2>{language.fever[lan]}</h2>
                             </div>
                         </div>
                     </div>
@@ -91,7 +94,7 @@ let Landing = () => {
                         <div class="card shadow p-3 mb-5 bg-white rounded text-center">
                             <div class="card-body">
                                 <img src={soreThroat} alt="sore throat" class="img-fluid" />
-                                <h2>Soar Throat</h2>
+                                <h2>{language.soarThroat[lan]}</h2>
                             </div>
                         </div>
                     </div>
@@ -99,7 +102,7 @@ let Landing = () => {
                         <div class="card shadow p-3 mb-5 bg-white rounded text-center">
                             <div class="card-body">
                                 <img src={headache} alt="headache" class="img-fluid" />
-                                <h2>Headache</h2>
+                                <h2>{language.headache[lan]}</h2>
                             </div>
                         </div>
                     </div>
@@ -107,7 +110,7 @@ let Landing = () => {
                         <div class="card shadow p-3 mb-5 bg-white rounded text-center">
                             <div class="card-body">
                                 <img src={cough} alt="cough" class="img-fluid" />
-                                <h2>Cough</h2>
+                                <h2>{language.cough[lan]}</h2>
                             </div>
                         </div>
                     </div>
