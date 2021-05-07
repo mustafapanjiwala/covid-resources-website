@@ -39,7 +39,7 @@ let CustomNavbar = (props) => {
             </Nav.Item>
 
             <Nav.Item className="mr-2">
-                <Link to="/res" className="text-secondary">{language.resources[lan]}</Link>
+                <Link to="/res/dashboard" className="text-secondary">{language.resources[lan]}</Link>
             </Nav.Item>
         </Nav>
 

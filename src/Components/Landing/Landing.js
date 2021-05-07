@@ -23,7 +23,7 @@ let Landing = (props) => {
             <div className="LandingCont">
                 <h2>{language.fightCovid[lan]}</h2>
                 <p>{language.homeDesc[lan]}</p>
-                <Link to="/res"><Button>{language.resources[lan]}</Button></Link>
+                <Link to="/res/dashboard"><Button>{language.resources[lan]}</Button></Link>
             </div>
             <div className="LandingCont">
                 <img className="img-fluid" src={covidImg} alt="Covid Img"></img>
