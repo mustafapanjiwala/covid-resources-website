@@ -99,15 +99,15 @@ let tiffinSchema = [
 let getData = async (id) => {
     let tableData = null;
     if (id === "oxygen") {
-        tableData = await fire.getOxygen();
+        tableData = await fire.getLocalOxygen();
     }
 
     if (id === "hospitalbeds") {
-        tableData = await fire.getBeds();
+        tableData = await fire.getLocalBeds();
     }
 
     if (id === 'tiffinserv') {
-        tableData = await fire.getTiffin();
+        tableData = await fire.getLocalTiffin();
     }
 
     // if (id === "plasmaassiastance") {
@@ -166,6 +166,7 @@ let DataTable = (props) => {
 
         let fetchData = async () => {
             // console.log("USe Effect ran");
+            // console.log("ran file");
             setTableData(await getData(props.id));
             setLoading(0);
         }

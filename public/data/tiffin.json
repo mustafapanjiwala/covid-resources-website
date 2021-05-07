@@ -1,0 +1,52 @@
+[
+    {
+        "contact": "9425312555",
+        "name": "Ghanshyam Patel",
+        "id": "1154c4ea-4cac-3f1a-8350-2b55d723454d",
+        "time": "Mon May 03 01:10:55 GMT+05:30 2021",
+        "price": "5",
+        "homedelivery": "No",
+        "description": "Centers : 1)Nanakheda Bus Stand.  2)Ghaas Mandi, Freeganj. 3)Zila Hospital. 4)Chimanganj Mandi, Fazalpura. 5) Narsimghat.",
+        "area": "Civil Hospital, Ujjain"
+    },
+    {
+        "description": "Contains 5 roti, dal, chawal or one seasonal veg",
+        "contact": "9669000926",
+        "id": "3558d6d9-e793-3bb8-bb40-e4cf62ef3272",
+        "area": "LIG 2nd, 228 Sandhipani Nagar",
+        "homedelivery": "yes",
+        "name": "Vignaharta Tiffin Centre",
+        "price": "60",
+        "time": "Mon May 03 00:59:03 GMT+05:30 2021"
+    },
+    {
+        "homedelivery": "yes",
+        "name": "Malwa Meals",
+        "contact": "8989675460",
+        "time": "Mon May 03 01:01:49 GMT+05:30 2021",
+        "area": "Mahananda Nagar Square",
+        "id": "7bdce70e-2fa9-3c0f-8010-5ad9f3a7e6f3",
+        "price": "80",
+        "description": "None"
+    },
+    {
+        "homedelivery": "yes",
+        "name": "Vijay Kewaliya",
+        "area": "Bharat Mata Mandir, Ujjain",
+        "time": "Mon May 03 01:03:12 GMT+05:30 2021",
+        "price": "Free",
+        "contact": "9425092631",
+        "id": "87915137-8b6f-33f5-a0e8-23954fcf503c",
+        "description": "None"
+    },
+    {
+        "price": "none",
+        "id": "fe6b5145-953e-3f5e-94b8-17b101121ef7",
+        "name": "Mumineen Helpline",
+        "time": "Mon May 03 01:06:22 GMT+05:30 2021",
+        "contact": "9770335252",
+        "homedelivery": "No ( Hospitals Only )",
+        "description": "For meals, whatsapp your hospital details between 9am - 10am",
+        "area": "none"
+    }
+]

@@ -8,7 +8,7 @@ let CurrentData = (props) => {
     let lan = props.lan;
     useEffect(() => {
         let fetchData = async () => {
-            setCurrData(await fire.getData());
+            setCurrData(await fire.getLocalCurrData());
         }
         fetchData();
     }, []);

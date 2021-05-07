@@ -1,0 +1,72 @@
+[
+    {
+        "oxygenaddress": "Near Hari Masjid, Top Khana, Ujjain",
+        "oxygenprice": "0",
+        "oxygendsupplier": "Shoyab",
+        "oxygenid": "08fd16ae-3dbf-3ecc-ab1e-844b16e5b491",
+        "oxygenprocess": "Bring Aadhar Card and Prescription",
+        "time": "Sun May 02 23:53:36 GMT+05:30 2021",
+        "oxygendescription": "Refill from 3PM to 5AM",
+        "oxygendcontact": "9827761695"
+    },
+    {
+        "oxygendcontact": "9425915080",
+        "time": "Sun May 02 23:52:32 GMT+05:30 2021",
+        "oxygenid": "12e8b041-b074-3fe9-9015-08e8462fae56",
+        "oxygendescription": "18 Cylinders are available",
+        "oxygenprocess": "No Procedure",
+        "oxygenprice": "0",
+        "oxygendsupplier": "Mahesh Sitlani",
+        "oxygenaddress": "Home Delivery"
+    },
+    {
+        "oxygendcontact": "9826073532",
+        "oxygendsupplier": "Bhanu Bhadoria",
+        "oxygenprice": "0",
+        "oxygenaddress": "Durga Plaza, Freeganj, Ujjain",
+        "oxygenid": "2c89e063-1f7b-32be-b49f-49961b0246aa",
+        "oxygendescription": "Available as per the requirement.",
+        "time": "Sun May 02 23:55:22 GMT+05:30 2021",
+        "oxygenprocess": "Bring Aadhar Card and Prescription"
+    },
+    {
+        "oxygenid": "4020df23-485b-32ed-a888-0215d2f48c64",
+        "oxygendescription": "Available as per the requirement.",
+        "oxygenprocess": "Bring Aadhar Card and Prescription",
+        "time": "Sun May 02 23:55:59 GMT+05:30 2021",
+        "oxygendcontact": "9406679796",
+        "oxygendsupplier": "Mahendra Nahar",
+        "oxygenaddress": "Nai Peth",
+        "oxygenprice": "0"
+    },
+    {
+        "oxygenid": "c42c9314-7943-3d43-baa6-a6604b3904e9",
+        "oxygenaddress": "Shukla Travels, Desai Nagar, Ujjain",
+        "oxygendsupplier": "Manish Shukla",
+        "oxygendcontact": "9009777779",
+        "oxygenprocess": "Bring Aadhar Card and Prescription",
+        "time": "Sun May 02 23:54:40 GMT+05:30 2021",
+        "oxygenprice": "0",
+        "oxygendescription": "Available as per the requirement."
+    },
+    {
+        "oxygenid": "cd61338f-b69a-3ec1-9c8b-b4eb6aed8575",
+        "oxygendescription": "SafeExpress Ujjain Branch. Also available as per requirement.",
+        "time": "Wed May 05 22:35:43 GMT+05:30 2021",
+        "oxygenaddress": "19, Saket Nagar",
+        "oxygenprocess": "No Procedure",
+        "oxygendcontact": "9827256235",
+        "oxygendsupplier": "Sourabh Jain Ji",
+        "oxygenprice": "00"
+    },
+    {
+        "oxygendescription": "-",
+        "oxygendcontact": "9340539961",
+        "oxygenaddress": "Sant Nagar Chauraha, Near Mahakal Mishthan, Ujjain",
+        "time": "Sun May 02 23:57:01 GMT+05:30 2021",
+        "oxygenprocess": "Oxygen and Pipe (supplements only)",
+        "oxygenid": "e262cebb-a16c-36e0-9b0a-0714fbfe1dec",
+        "oxygenprice": "145",
+        "oxygendsupplier": "Kushagra Kumar"
+    }
+]

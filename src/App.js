@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Resources from './Components/Recources/Resources';
 import Navbar from './Components/CustomNavbar/CustomNavbar';
 import { useState } from 'react';
+import Download from './Components/Download';
 
 
 function App() {
@@ -40,6 +41,9 @@ function App() {
         </Route>
         <Route exact path="/res/:id">
           <Resources lan={lan}></Resources>
+        </Route>
+        <Route exact path="/secretpage">
+          <Download></Download>
         </Route>
 
       </Switch>
