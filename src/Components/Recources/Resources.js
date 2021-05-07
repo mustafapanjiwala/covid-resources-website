@@ -48,10 +48,17 @@ let Resources = (props) => {
         return <DataTable lan={lan} id={id} loading={loading} setLoading={setLoading}></DataTable>
     }
 
+    let calcHeader = () => {
+        if (language[id]) {
+            return language[id][lan];
+        }
+        return `404 not found ${id}`;
+    }
+
     // console.log("loading : ", loading);
     return <div>
         <Dashboard lan={lan} setLoading={setLoading} onClick={exScroll}></Dashboard>
-        <h1 ref={myRef} className="ResourcesHeader">{language[id || "dashboard"][lan] + " : "}</h1>
+        <h1 ref={myRef} className="ResourcesHeader">{calcHeader() + " : "}</h1>
         {RenderData()};
     </div>
 }
